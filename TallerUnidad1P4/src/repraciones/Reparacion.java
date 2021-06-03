@@ -15,7 +15,7 @@ public class Reparacion {
    private String tipoEquipo;
    private Componente[] componentesUsados;
    private int indice;  
-
+    private int contador;
     
 
     public Reparacion(String cliente, String tipoEquipo){
@@ -31,6 +31,13 @@ public class Reparacion {
         componentesUsados = new Componente[8];
         
     }
-    
+    /*
+    •	Metodo imprimirResumen(): void, que muestra el nombre del cliente,
+    el tipo de equipo reparado, la información de los componentes usados y 
+    el total a pagar.
+    */
+    public void imprimirResumen(){
+        System.out.println(cliente+tipoEquipo+calcularTotal());
+    }
 
 }
