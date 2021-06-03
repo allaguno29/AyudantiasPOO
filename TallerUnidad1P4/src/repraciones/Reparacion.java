@@ -11,4 +11,21 @@ package repraciones;
  */
 public class Reparacion {
     
+
+
+
+    public Reparacion(String cliente, String tipoEquipo){
+        this.cliente = cliente;
+        this.tipoEquipo = tipoEquipo;
+        componentesUsados = new Componente[8];
+        
+    }
+    
+    public Reparacion(String tipoEquipo){
+        cliente = "consumidor final";
+        this.tipoEquipo = tipoEquipo;
+        componentesUsados = new Componente[8];
+        
+    }
+    
 }
