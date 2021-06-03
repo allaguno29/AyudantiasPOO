@@ -10,5 +10,9 @@ package repraciones;
  * @author rocio
  */
 public class Reparacion {
-    
+   private String cliente;
+   private String tipoEquipo;
+   private Componente[] componentes;
+   private int indice; 
+   private String prueba;
 }
