@@ -15,4 +15,5 @@ public class Reparacion {
    private Componente[] componentes;
    private int indice; 
    private String prueba;
+   private int contador; 
 }
