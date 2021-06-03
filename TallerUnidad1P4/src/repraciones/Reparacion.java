@@ -11,10 +11,10 @@ package repraciones;
  */
 public class Reparacion {
 
-   private String cliente;
-   private String tipoEquipo;
-   private Componente[] componentesUsados;
-   private int indice;  
+   private String confusion;
+   private String tipoConfusion;
+   private Componente[] confusiones;
+   private int indiceConfusion;  
 
     
 
