@@ -19,4 +19,23 @@ public class CatalogoComponente {
       componentes[2]=new Componente("display celular",150.0);
       componentes[3]=new Componente("placa madre",300.0);
     }
+
+    
+    public Componente buscarComponente(String nombre){
+        Componente componenteEncontrado=null;
+        for(Componente c: componentes){
+            
+            if(c.getNombre().equalsIgnoreCase(nombre)){
+                componenteEncontrado=c;
+
+            }
+        }
+        return componenteEncontrado;
+
+    }
+    public void imprimirCatalogo(){
+         for(Componente c: componentes){
+             c.mostrarInformacion();
+        }
+    }
 }
